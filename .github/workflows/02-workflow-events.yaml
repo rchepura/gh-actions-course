@@ -1,13 +1,13 @@
-name: 02 - Workflow Events
+name: 03 - Workflow Runners
 on:
-    push:
-    pull_request:
+    # push:
+    # pull_request:
     # schedule:
     #     - cron: '*/5 * * * *'
     workflow_dispatch:
 
 jobs:
-  echo:
+  echo: 
     runs-on: ubuntu-latest
     steps:
       - name: Show the trigger

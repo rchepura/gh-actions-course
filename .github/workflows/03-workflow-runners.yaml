@@ -1,0 +1,26 @@
+name: 02 - Workflow Events
+on:
+    push:
+    # pull_request:
+    # schedule:
+    #     - cron: '*/5 * * * *'
+    # workflow_dispatch:
+
+jobs:
+  ubuntu-echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show OS
+        run: |
+            echo "This job is running on an Ubuntu runner."
+  windows-echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show OS
+        shell: bash
+        run: echo "This job is running on a Windows runner."
+  mac-echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show OS
+        run: echo "This job is running on a Mac runner."
