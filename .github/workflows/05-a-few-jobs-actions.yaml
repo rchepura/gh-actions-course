@@ -5,10 +5,10 @@ jobs:
   deploy-toronto:
     runs-on: ubuntu-latest
     steps:
-      - name: Printing Folders
+      - name: Deploy Toronto
         run: echo "Deploy Toronto"
   deploy-florida:
     runs-on: ubuntu-latest
     steps:
-      - name: Printing Folders
-        run: echo "Deploy Florida"
+      - name: Deploy Florida
+        run: which php && php -v
