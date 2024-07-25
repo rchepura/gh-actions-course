@@ -1,0 +1,14 @@
+name: 05 - Test a few jobs
+on: push
+
+jobs:
+  deploy-toronto:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Printing Folders
+        run: echo "Deploy Toronto"
+  deploy-florida:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Printing Folders
+        run: echo "Deploy Florida"
